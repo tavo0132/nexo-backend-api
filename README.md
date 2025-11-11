@@ -69,7 +69,7 @@ nexo-backend/
 ## 🛠️ Tecnologías
 
 - **Backend**: Flask 2.3.3
-- **Base de Datos**: MySQL 9.5 + SQLAlchemy ORM
+- **Base de Datos**: MySQL 8.0 + SQLAlchemy ORM
 - **Autenticación**: JWT con PyJWT 2.8.0
 - **Migraciones**: Alembic
 - **Validación**: Argon2 para hashing de passwords
