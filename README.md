@@ -253,20 +253,34 @@ uploads/
 - **422** Unprocessable Entity - Validación fallida
 - **500** Internal Server Error - Error del servidor
 
-## 🔄 Roadmap
+## 🔄 Roadmap del Proyecto
 
-### ✅ Etapa 1: Base
-- Sistema de autenticación básico
+### ✅ Etapa 0: Configuración del Entorno - Aplicando Saberes 1
+- **Infraestructura base**: MySQL Server 8.0, entorno virtual Python
+- **Estructura del proyecto**: Flask factory pattern, configuraciones
+- **Health check**: Endpoint básico de monitoreo del servidor
+- **Variables de entorno**: Configuración segura y modular
 
-### ✅ Etapa 2: Perfiles (Actual)
-- Gestión completa de perfiles
-- Sistema de avatares
-- Búsqueda de usuarios
+### ✅ Etapa 1: Autenticación y Autorización - Aplicando Saberes 2
+- **Sistema JWT**: Tokens seguros con expiración y renovación
+- **Hash Argon2**: Encriptación segura de contraseñas
+- **Modelos de datos**: User y AuthLocal con SQLAlchemy ORM
+- **Migraciones Alembic**: Control de versiones de base de datos
+- **Endpoints auth**: Registro, login con validaciones completas
 
-### 🚧 Etapa 3: Amistades (Próximo)
-- Sistema de solicitudes de amistad
-- Estados de relación (pending/accepted/rejected)
-- Gestión de amigos
+### ✅ Etapa 2: Gestión de Perfiles de Usuario - Aplicando Saberes 3
+- **CRUD de perfiles**: Lectura, actualización con validaciones avanzadas
+- **Sistema de avatares**: Upload, validación MIME, límites de tamaño
+- **Búsqueda paginada**: Filtros y paginación de usuarios
+- **Protección de rutas**: Decorador @auth_required implementado
+- **Testing completo**: Suite Postman con casos exitosos y de error
+
+### 🚧 Etapa 3: Sistema de Amistades - Trabajo Final
+- **Modelo Friendship**: Estados de transición (pending/accepted/rejected/removed)
+- **Endpoints de amigos**: Solicitar, aceptar, rechazar, eliminar amistades
+- **Validaciones complejas**: Permisos, normalización de pares, reglas de negocio
+- **Casos edge**: Solicitudes duplicadas, auto-solicitudes, transiciones de estado
+- **API completa**: Listado filtrado de amistades por estado
 
 ## 📞 Soporte
 
